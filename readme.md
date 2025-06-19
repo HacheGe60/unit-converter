@@ -2,29 +2,29 @@
 
 A simple and responsive web app that converts between metric and imperial units for **length**, **volume**, and **mass**. Built with HTML, CSS, and JavaScript.
 
-## 🚀 Features
+## Features
 
-- 🌡️ Converts:
+- Converts:
   - Meters ↔ Feet
   - Liters ↔ Gallons
   - Kilograms ↔ Pounds
-- 🌗 Light/Dark mode toggle with a moon/sun icon
-- 🧮 Input validation to handle incorrect values
-- 📱 Responsive design for different screen sizes
-- ⌨️ Press `Enter` or click `Convert` to get results
+- Light/Dark mode toggle with a moon/sun icon
+- Input validation to handle incorrect values
+- Responsive design for different screen sizes
+- Press `Enter` or click `Convert` to get results
 
-## 📸 Preview
+## Preview
 
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (Flexbox, responsive units)
 - JavaScript (DOM manipulation)
 
-## 📂 File Structure
+## File Structure
 
 project-folder/
 │
@@ -37,14 +37,14 @@ markdown
 Copiar
 Editar
 
-## ⚙️ How to Use
+## How to Use
 
 1. Clone or download this repository.
 2. Open `index.html` in your browser.
 3. Enter a number in the input field and click the **Convert** button.
 4. Toggle between light and dark mode using the moon/sun icon.
 
-## 🧪 Example
+## Example
 
 If you enter `20`, you will get:
 
@@ -52,10 +52,10 @@ If you enter `20`, you will get:
 - **Volume**: `20 liters = 5.284 gallons | 20 gallons = 75.708 liters`
 - **Mass**: `20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos`
 
-## 🌙 Dark Mode
+## Dark Mode
 
 Click the 🌙 icon to switch to dark mode — the background and text colors adapt for a better night-time reading experience.
 
-## 📄 License
+## License
 
 This project is open source and free to use for personal or educational purposes.
