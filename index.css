@@ -73,6 +73,15 @@ body {
     border-radius: 0.2rem;
 }
 
+.convert-btn:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.convert-btn:active {
+    transform: scale(0.98);
+}
+
 .result {
     display: flex;
     flex-direction: column;
@@ -84,7 +93,8 @@ body {
 
 .measure {
     margin-bottom: 1rem;
-    width: 31.25rem;
+    width: 90%;
+    max-width: 31.25rem;
     height: 6.25rem;
     background-color: #ffffff;
     color: #5a537b;
@@ -102,4 +112,9 @@ body {
 .measure p {
     font-size: 1rem;
     color: #353535
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
 }

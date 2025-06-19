@@ -9,9 +9,9 @@ const measureEl = document.querySelectorAll('.measure');
 let quantity = '';
 
 function convert() {
-    quantity = quantityInputEl.value;
-    if (quantity === '') {
-        quantity = '1';
+    quantity = parseFloat(quantityInputEl.value);
+    if (isNaN(quantity) || quantity <= 0) {
+        quantity = 1;
     }
     const lengthFeet = (quantity * 3.281).toFixed(3);
     const lengthMeters = (quantity / 3.281).toFixed(3);
@@ -27,11 +27,17 @@ function convert() {
 
 convertBtnEl.addEventListener('click', convert);
 
+quantityInputEl.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        convert();
+    }
+});
+
 function dayNight() {
     if (dayNightEl.classList.contains('fa-moon')) {
         dayNightEl.classList.remove('fa-moon');
         dayNightEl.classList.add('fa-sun');
-        resultEl.style.backgroundColor = '#1f2937   ';
+        resultEl.style.backgroundColor = '#1f2937';
         measureEl.forEach(measure => {
             measure.style.backgroundColor = '#273549';
             measure.style.color = '#ccc1ff';
